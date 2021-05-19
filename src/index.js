@@ -16,7 +16,12 @@ if (tmpHour >= 12 && tmpHour < 18) {
   tmpStyle.color = "blue";
 } else {
   tmpDayTime = "Good morning";
-  tmpStyle.color  = "red";
-};
+  tmpStyle.color = "red";
+}
 
-ReactDOM.render(<h1 style={tmpStyle}>{tmpDayTime}</h1>, document.getElementById("root"));
+ReactDOM.render(
+  <h1 className="heading" style={tmpStyle}>
+    {tmpDayTime}
+  </h1>,
+  document.getElementById("root")
+);
